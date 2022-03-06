@@ -138,6 +138,26 @@ p.saiba_mais > a:hover {
     color: var(--cor_destaque);
 }
 
+/* PRINCIPAL > SAIBA MAIS*/
+
+.voltar-comeco-da-pagina {
+    display: none;
+    position: fixed;
+    bottom: 4%;
+    right: 25px;
+    border-radius: 3px;
+    padding: 8px;
+    background-color: rgba(61, 97, 255, 0.75);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
+}
+
+.voltar-comeco-da-pagina:hover {
+    background-color: rgba(61, 97, 255, 0.856);
+}
+
+.voltar-comeco-da-pagina a {
+    text-decoration: none;
+}
 
 /* SIDEBAR */
 
@@ -155,7 +175,6 @@ p.saiba_mais > a:hover {
     margin: 16px 32px;
 
 }
-
 
 .sidebar-input > input {
     display: inline;
@@ -215,7 +234,6 @@ p.saiba_mais > a:hover {
 }
 
 
-
 /* FOOTER */
 
 footer {
@@ -239,26 +257,8 @@ footer > a:hover {
     text-decoration: none;
 }   
 
-.voltar-comeco-da-pagina {
-    display: none;
-    position: fixed;
-    bottom: 4%;
-    right: 25px;
-    border-radius: 3px;
-    padding: 8px;
-    background-color: rgba(61, 97, 255, 0.75);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.253);
-}
 
-.voltar-comeco-da-pagina:hover {
-    background-color: rgba(61, 97, 255, 0.856);
-}
-
-.voltar-comeco-da-pagina a {
-    text-decoration: none;
-}
-
-/* MEDIA QUERY*/
+/* SIDEBAR QUE APARECE APENAS COM MEDIA QUERY*/
 
 #sidebar-smartphone-tablet {
     display: flex;
@@ -274,7 +274,6 @@ footer > a:hover {
     line-height: 35px;
     transition: all .4s;
 }
-
 
 #botao-sidebar {
     display: none;
@@ -316,12 +315,10 @@ footer > a:hover {
     color: var(--cor_destaque);
 }
 
-/* MEDIA QUERY*/
 
 @media only screen and (max-width: 1000px) {
 
     /* HEADER */
-
     header {
         display: flex;
         flex-direction: row;
@@ -341,6 +338,10 @@ footer > a:hover {
         align-items: baseline;
     }
 
+    #sidebar  {
+        display: none;
+    }
+
     #botao-sidebar {
         display: block;
     }
@@ -355,10 +356,6 @@ footer > a:hover {
     }
 
     #sidebar-smartphone-tablet.active ~ .voltar-comeco-da-pagina{
-        display: none;
-    }
-
-    #sidebar  {
         display: none;
     }
 
@@ -403,9 +400,6 @@ footer > a:hover {
     footer > * {
         margin: 15px;
     }
-
-
-
 }
 
 @media only screen and (max-width: 570px) {
@@ -418,7 +412,6 @@ footer > a:hover {
         font-size: 95%;
     }
 }
-
 
 @media only screen and (max-width: 450px) {
     .texto-principal-big-image-container > img {
