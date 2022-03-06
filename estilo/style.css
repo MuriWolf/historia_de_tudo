@@ -8,6 +8,7 @@
 body {
     background-color: rgb(253, 253, 253);
     color: var(--cor_principal_texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
