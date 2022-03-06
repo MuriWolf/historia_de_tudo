@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+:root {
+    --cor_principal_texto: rgb(68, 68, 68);
+    --cor_principal_titulo: rgb(41, 41, 41);
+    --cor_destaque: rgb(61, 97, 255);
+}
+
+.grid-historias {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+.grid-historias-historia-container {
+    max-width: 29.5%;
+    margin: auto;
+    margin: 12px;
+    height: 350px;
+    margin-bottom: 120px;
+}
+
+.grid-historias-historia-imagem {
+    width: 100%;
+}
+
+.grid-historias-historia-titulo {
+    margin: 8px 0px;
+}
+
+.grid-historias-historia-titulo > a {
+    color: var(--cor_destaque);
+    text-decoration: none;
+}
+
+.grid-historias-historia-titulo > a:hover {
+    color: rgb(53, 82, 212);
+}
+
+.grid-historias-historia-paragrafo {
+    line-height: 28px;
+}
+
+.grid-historias-historia-leiamais {
+    width: 80px;
+    padding: 4px;
+    border-radius: 4px;
+    margin-top: 18px;
+    text-align: center;
+    background-color: rgb(109, 209, 109);
+
+}
+
+.grid-historias-historia-leiamais > a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-historias-historia-leiamais:hover {
+    background-color: rgb(78, 151, 78);
+    transition:0.5s;
+
+}
+
+@media only screen and (max-width: 1080px) {
+    .grid-historias-historia-container {
+        max-width: 45%;
+        margin: auto;
+        margin: 12px;
+        height: 350px;
+        margin-bottom: 120px;
+    }
+
+
+    .grid-historias-historia-container .grid-historias-historia-paragrafo, .grid-historias-historia-titulo {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .text-header {
+        text-align: center;
+    }
+
+    .main-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .grid-historias {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .texto-principal {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        width: 0px;
+    }
+
+    .sidebar * {
+        margin: none;
+        padding: none;
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer > * {
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 570px) { 
+    .grid-historias {
+        display: flex;
+        justify-content: left;
+    }
+    .grid-historias-historia-container {
+        max-width: 80%;
+        margin: auto;
+        margin: 12px;
+        height: 350px;
+        margin-bottom: 120px;
+    }
+
+    .grid-historias-historia-container .grid-historias-historia-paragrafo .grid-historias-historia-titulo {
+        font-size: 125%;
+    }
+}

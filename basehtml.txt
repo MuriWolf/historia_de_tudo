@@ -1,0 +1,81 @@
+1320px width 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História de Tudo</title>
+</head>
+<body>
+    <header>
+        <div class="text-header">
+            <h1 class="header-title"><a href="">História de Tudo</a></h1>
+            <p>A origem das coisas, a história das invenções, curiosidades e pesquisas escolares.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+        <article class="texto-principal">
+            <h1 class="texto-principal-titulo"></h1>
+            <div class="texto-principal-big-image-container  ">
+                <img class="centralizar-imagem" src="imagens/book.jpg" alt="livros">
+            </div>
+            <p class="texto-principal-paragrafo"></p>
+            <p class="texto-principal-paragrafo"></p>
+        </article>
+
+        <div class="sidebar">
+            <div class="sidebar-input">
+                <input type="search" placeholder="Pesquisar">
+            </div>
+            <h2 class="titulo-h2-sidebar">Estão pesquisando sobre…</h2>
+            <ul class="lista-sidebar">
+                <li><a class="sidebar-link" href="historia_videogame.html">História do Videogame</a></li>
+                <li><a class="sidebar-link" href="">História da Ginástica</a></li>
+                <li><a class="sidebar-link" href="">História da Calculadora</a></li>
+                <li><a class="sidebar-link" href="">História do Futsal</a></li>
+                <li><a class="sidebar-link" href="historia_piano.html">História do Piano</a></li>
+                <li><a class="sidebar-link" href="">História da Geografia</a></li>
+                <li><a class="sidebar-link" href="historia_quimica.html">História da Quimica</a></li>
+            </ul>
+            <h2 class="titulo-h2-sidebar">Seções</h2>
+            <ul class="lista-sidebar">
+                <li><a class="sidebar-link" href="">Arte</a></li>
+                <li><a class="sidebar-link" href="">Biografias</a></li>
+                <li><a class="sidebar-link" href="">Comidas e Bebidas</a></li>
+                <li><a class="sidebar-link" href="">Curiosidades</a></li>
+                <li><a class="sidebar-link" href="">Datas Comemorativas</a></li>
+                <li><a class="sidebar-link" href="">Drogas</a></li>
+                <li><a class="sidebar-link" href="">Economia</a></li>
+                <li><a class="sidebar-link" href="">Educação</a></li>
+                <li><a class="sidebar-link" href="">Eletrodomésticos</a></li>
+                <li><a class="sidebar-link" href="">Eletrônicos</a></li>
+                <li><a class="sidebar-link" href="">Esportes</a></li>
+                <li><a class="sidebar-link" href="">Expressões Populares</a></li>
+                <li><a class="sidebar-link" href="">Games</a></li>
+                <li><a class="sidebar-link" href="">Higiene</a></li>
+                <li><a class="sidebar-link" href="">História do Brasil</a></li>
+                <li><a class="sidebar-link" href="">Idade Antiga</a></li>
+                <li><a class="sidebar-link" href="">Idade Média</a></li>
+                <li><a class="sidebar-link" href="">Idade Moderna</a></li>
+                <li><a class="sidebar-link" href="">Idade Contemporânea</a></li>
+                <li><a class="sidebar-link" href="">Informática</a></li>
+                <li><a class="sidebar-link" href="">Instrumentos Musicais</a></li>
+                <li><a class="sidebar-link" href="">Meios de Transporte</a></li>
+                <li><a class="sidebar-link" href="">Objetos</a></li>
+                <li><a class="sidebar-link" href="">Pré-História</a></li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <a href="">Contato</a>
+        <p>Copyright © 2020 História de Tudo</p>
+        <a href="quem_somos.html">Quem Somos</a>
+    </footer>
+</body>
+</html>
