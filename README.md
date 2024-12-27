@@ -1,15 +1,27 @@
-# historia_de_tudo
+# HistoriaDeTudo
 
-![copia-historia-de-tudo](https://user-images.githubusercontent.com/83728277/189274431-f4d17e0b-2350-46df-9b6d-b5a08c4c7ea3.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
-## Descrição/description
+## Development server
 
-Cópia do Site "História de Tudo", essa cópia só foi feita no intuito de aprimorar minhas habilidades de desenvolvimento web com foco no estilo do site (CSS3 e JS).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-Apenas as páginas "Index", "História dos videogames", "História da Química", "História do Piano", "Arte", "Fale Conosco" e "Quem Somos" estão feitas.
+## Code scaffolding
 
-#### Foi usado na construção desse projeto/Was used in this project:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-- Semantic HMTL
-- CSS
-- Javascript
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
