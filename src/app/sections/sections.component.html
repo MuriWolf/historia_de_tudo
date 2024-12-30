@@ -1,0 +1,27 @@
+@if (section) {
+<div class="prose mb-5">
+  <h2>{{ section.name }}</h2>
+</div>
+}
+
+<div>
+  <article class="flex flex-col lg:grid gap-4">
+    @if (this.error) {
+    <p class="text-error">status text: {{ error.statusText }} - name: {{ error.name }}</p>
+    } @else {
+    @if (this.postsResult.length < 1) {
+      <p>Nenhum artigo foi encontrado nessa categoria.</p>
+    } @else {
+        @for (postResult of this.postsResult; track postResult.id) {
+          <app-card [title]="postResult.title"
+            [imgSrc]="postResult.imgUrl"
+            [imgAlt]="postResult.title"
+            [preview]="postResult.preview"
+            [postUrl]="postResult.postUrl"
+          />
+        }
+      }
+    }
+  </article>
+
+</div>

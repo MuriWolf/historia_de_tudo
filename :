@@ -1,0 +1,11 @@
+<main class="w-full max-w-5xl mx-auto my-8">
+  <app-header  />
+  <div class="divider"></div>
+
+  <div class="mx-2">
+    <router-outlet />
+  </div>
+
+  <div class="divider"></div>
+  <app-footer />
+</main>

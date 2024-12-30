@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FilesService } from '../shared/services/files.service';
 import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
+import { Subscriber, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-post',
@@ -9,20 +10,22 @@ import { HttpErrorResponse, HttpResponse } from '@angular/common/http';
   styleUrl: './post.component.css',
   standalone: false
 })
-export class PostComponent implements OnInit {
+export class PostComponent implements OnInit, OnDestroy {
   postName: string | undefined;
   postUrl: string | undefined;
+  sub: Subscription | undefined;
+  innerSub: Subscription | undefined;
 
   constructor(private route: ActivatedRoute, private filesService: FilesService, private router: Router) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
+    this.sub = this.route.params.subscribe(params => {
       this.postName = params['id'];
 
       if (this.postName) {
         this.postUrl = this.postName + '.md';
 
-        this.filesService.fileExists(this.postUrl).subscribe((response: boolean | HttpErrorResponse) => {
+        this.innerSub = this.filesService.fileExists(this.postUrl).subscribe((response: boolean | HttpErrorResponse) => {
           if (response instanceof HttpErrorResponse) {
             if (response.status === 404) {
               this.router.navigate(['/notFound'])
@@ -32,5 +35,10 @@ export class PostComponent implements OnInit {
         })
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.innerSub!.unsubscribe();
+    this.sub!.unsubscribe();
   }
 }

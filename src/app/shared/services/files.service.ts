@@ -10,8 +10,6 @@ export class FilesService {
   constructor(private http: HttpClient) { }
 
   fileExists(url: string): Observable<boolean> {
-    console.log(url);
-
     return this.http.get(url, { responseType: 'text' })
       .pipe(
         map(response => {

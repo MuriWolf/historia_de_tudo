@@ -1,0 +1,31 @@
+<aside class="drawer drawer-end lg:drawer-open ">
+  <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col items-center justify-center">
+    <!-- Page content here -->
+    <label for="my-drawer-2" class="bg-primary drawer-button lg:hidden fixed top-2 right-2 xs:top-4 xs:right-4 w-10 h-10 rounded-full p-3">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+      </svg>
+    </label>
+  </div>
+  <div class="drawer-side lg:h-max">
+    <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-primary text-primary-content h-max w-[330px] p-2 rounded-box ">
+      <label class="input input-bordered flex items-center gap-2 m-2 mb-4">
+        <input type="text" class="grow" placeholder="Search" [(ngModel)]="searchText" (keydown.enter)="search(searchText)" />
+        <button type="button" (click)="search(searchText)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+            <path fill-rule="evenodd"
+              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </label>
+      @for (section of this.sections; track section.name) {
+      <li><a [routerLink]="section.url" routerLinkActive="page" ariaCurrentWhenActive="page">{{ section.name }}</a></li>
+      }
+    </ul>
+  </div>
+</aside>

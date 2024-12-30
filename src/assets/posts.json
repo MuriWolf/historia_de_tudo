@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "História do Saci",
+        "preview": "O saci, também conhecido como saci-pererê, é sem dúvidas um dos personagens mais conhecidos do folclore brasileiro. Segundo a lenda ...",
+        "postUrl": "/posts/historia-do-saci",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2021/06/saci-768x403.jpg",
+        "section": "folclore-brasileiro"
+    },
+    {
+        "id": 2,
+        "title": "História da Cuca",
+        "preview": "A Cuca é um dos seres fantásticos mais famosos do folclore brasileiro. Conhecida por ser uma maligna feiticeira com ...",
+        "postUrl": "/posts/historia-da-cuca",
+        "imgUrl": "https://www.historiadetudo.com/wp-content/uploads/2021/06/cuca.jpg",
+        "section": "folclore-brasileiro"
+    },
+    {
+        "id": 3,
+        "title": "Guerra dos Trinta Anos",
+        "preview": "Retratação da morte do rei sueco Gustavo Adolfo durante a Guerra dos Trinta Anos. Ocorrida entre 1618 e 1648, a Guerra ...",
+        "postUrl": "/posts/guerra-dos-trinta-anos",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2017/12/guerra-dos-trinta-anos-768x509.jpg",
+        "section": "idade-media"
+    },
+    {
+        "id": 4,
+        "title": "História das Bruxas",
+        "preview": "A história das bruxas é anterior à Idade Média, tendo se iniciado ainda na Antiguidade. Apontadas pela cultura popular sempre ...",
+        "postUrl": "/posts/historia-das-bruxas",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_600/https://www.historiadetudo.com/wp-content/uploads/2017/12/historia-das-bruxas.jpg",
+        "section": "idade-media"
+    },
+    {
+        "id": 5,
+        "title": "Os Vikings",
+        "preview": "Os Vikings ficaram conhecidos por suas conquistas e influência em toda a Europa. Os vikings eram povos oriundos da região ...",
+        "postUrl": "/posts/os-vikings",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2017/11/os-vikings-768x461.jpg",
+        "section": "idade-media"
+    },
+    {
+        "id": 6,
+        "title": "Inquisição",
+        "preview": "A execução na fogueira era um famoso método de punição da Inquisição. Criada no século XII, a Inquisição foi uma instituição ...",
+        "postUrl": "/posts/inquisicao ",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2017/11/inquisicao-768x450.jpg",
+        "section": "idade-media"
+    },
+    {
+        "id": 7,
+        "title": "Guerra das Rosas",
+        "preview": "A Guerra das Rosas foi um conflito entre a família Lancaster (rosa vermelha) e York (rosa branca). A Guerra das ...",
+        "postUrl": "/posts/guerra-das-rosas",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2017/11/guerra-das-rosas-768x812.jpg",
+        "section": "idade-media"
+    },
+    {
+        "id": 8,
+        "title": "A vida dos faraós do Egito",
+        "preview": "A vida dos faraós do Egito era muito mais ligada à religião do que aos prazeres da vida. É verdade ...",
+        "postUrl": "/posts/vida-dos-faraos-do-egito",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2017/11/vida-dos-faraos-768x543.jpg",
+        "section": "idade-antiga"
+    },
+    {
+        "id": 9,
+        "title": "As misteriosas Pirâmides do Egito",
+        "preview": "As Pirâmides do Egito serviam para transportar a alma dos faraós junto aos deuses. Para os egípcios, as pirâmides representavam ...",
+        "postUrl": "/posts/as-misteriosas-piramides-do-egito",
+        "imgUrl": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_768/https://www.historiadetudo.com/wp-content/uploads/2017/11/piramides-do-egito-768x434.jpg",
+        "section": "idade-antiga"
+    }
+]

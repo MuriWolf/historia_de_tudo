@@ -1,0 +1,25 @@
+<div class="lg:grid grid-cols-12 gap-4">
+  <article class="flex flex-col gap-4 col-span-8">
+    @if (this.error) {
+      @if (this.error.status === 404) {
+        <p class="text-error text-lg">Nenhum post foi encontrado</p>
+      }
+      @else {
+    <p class="text-error">status text: {{ error.statusText }} - name: {{ error.name }}</p>
+      }
+    } @else {
+      @for (postInfo of this.postsInfo; track postInfo.id) {
+        <app-card [title]="postInfo.title"
+          [imgSrc]="postInfo.imgUrl"
+          [imgAlt]="postInfo.title"
+          [preview]="postInfo.preview"
+          [postUrl]="postInfo.postUrl"
+        />
+      }
+    }
+  </article>
+
+  <div class="col-span-4">
+    <app-aside />
+  </div>
+</div>
